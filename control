@@ -1,0 +1,9 @@
+Package: com.p2kdev.deleteforeverxs
+Name: DeleteForeverXS
+Depends: mobilesubstrate
+Version: 1.1
+Architecture: iphoneos-arm
+Description: Delete Media with moving to Recently Deleted!
+Maintainer: P2KDev <p2kdev@gmail.com>
+Author: P2KDev <p2kdev@gmail.com>
+Section: Tweaks
