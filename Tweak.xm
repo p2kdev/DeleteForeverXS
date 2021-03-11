@@ -30,11 +30,11 @@
 			NSString *deleteForeverActionTitle = [NSString stringWithFormat: @"Permanently %@", deleteOriginalTitle];
 
 			UIAlertAction* Delete = [UIAlertAction actionWithTitle:deleteForeverActionTitle style:UIAlertActionStyleDestructive
-																										 handler:^(UIAlertAction * action) {
-																											MSHookIvar<NSInteger>(self, "_action") = 4;
-																											[self _handleMainAlertConfirmed: YES];
-																										  [[self actionSheet] dismissViewControllerAnimated:YES completion:nil];
-																										}];
+				 handler:^(UIAlertAction * action) {
+					MSHookIvar<NSInteger>(self, "_action") = 4;
+					[self _handleMainAlertConfirmed: YES];
+				  [[self actionSheet] dismissViewControllerAnimated:YES completion:nil];
+				}];
 			[[self actionSheet] addAction:Delete];
 			[[[self actionSheet] performSelector:@selector(_actions)] exchangeObjectAtIndex: 2 withObjectAtIndex: 1];
 		}
